@@ -1,0 +1,35 @@
+{
+  "name": "auth-with-koa",
+  "version": "0.0.1",
+  "description": "A tuorial for auth with koa",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "export PORT=3001 NODE_ENV=testing && ava -w"
+  },
+  "author": "Spencer Snyder <sasnyde2@gmail.com> (https://spence-s.github.io)",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chalk": "^2.4.1",
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-passport": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.4.3",
+    "sequelize": "^5.0.0-beta.10",
+    "koa-session": "^5.8.2"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "supertest": "^3.1.0"
+  },
+  "ava": {
+    "files": [
+      "**/*spec.js"
+    ]
+  }
+}
