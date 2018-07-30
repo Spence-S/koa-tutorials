@@ -5,6 +5,14 @@ const test = require('ava');
 const app = require('../../index');
 const request = require('supertest')(app);
 
+test('GET /', async t => {
+  t.plan(1);
+
+  const res = await request.get('/');
+
+  t.is(res.status, 200);
+});
+
 test('GET /users', async t => {
   t.plan(2);
 
